@@ -1,0 +1,58 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="C4-Component-PaymentService" id="c4-component-payment">
+    <mxGraphModel dx="1051" dy="1581" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="C4 Model - Nível 3: Componentes - Payment Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="345.5" y="-110" width="469" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-controller" value="Payment Controller&#xa;[Component: Node.js/Express]&#xa;&#xa;Recebe requisições de pagamento,&#xa;valida entrada, orquestra fluxo&#xa;e retorna resposta padronizada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="150" y="120" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-manager" value="Payment Manager&#xa;[Component: Node.js]&#xa;&#xa;Orquestra processamento,&#xa;coordena validações, executa&#xa;business rules e gerencia estado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480" y="120" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="tokenization-engine" value="Tokenization Engine&#xa;[Component: Node.js/AES-256]&#xa;&#xa;Gera tokens seguros para cartões,&#xa;criptografia reversível, compliance&#xa;PCI-DSS Level 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="150" y="280" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="risk-checker" value="Risk Checker&#xa;[Component: Python/ML]&#xa;&#xa;Análise de risco em tempo real,&#xa;machine learning para fraudes,&#xa;scoring baseado em 50+ regras" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480" y="280" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway-adapter" value="Gateway Adapter&#xa;[Component: Node.js]&#xa;&#xa;Abstração para múltiplos gateways,&#xa;fallback automático, normalização&#xa;de respostas e retry logic" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="810" y="120" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="validation-rules" value="Validation Rules&#xa;[Component: Node.js/JSON]&#xa;&#xa;Regras de validação configuráveis,&#xa;BIN ranges, limites por merchant,&#xa;validação Luhn e CVV" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="810" y="280" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-repository" value="Payment Repository&#xa;[Component: Node.js/Prisma]&#xa;&#xa;Camada de acesso a dados,&#xa;transações ACID, auditoria&#xa;completa e data retention" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480" y="440" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="event-publisher" value="Event Publisher&#xa;[Component: Node.js/Kafka]&#xa;&#xa;Publica eventos de pagamento,&#xa;garantia de entrega, schema&#xa;registry e dead letter queue" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="150" y="440" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="api-gateway-external" value="API Gateway&#xa;[Sistema Externo: Kong]&#xa;&#xa;Rate limiting, autenticação,&#xa;load balancing" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="150" y="20" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="akua-gateway-external" value="Acquirer Gateway&lt;br&gt;[Sistema Externo]&lt;br&gt;&lt;br&gt;Processamento de cartões" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="810" y="20" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="postgresql-external" value="PostgreSQL&#xa;[Database]&#xa;&#xa;Transações, merchants, logs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="480" y="580" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka-external" value="Apache Kafka&#xa;[Message Broker]&#xa;&#xa;Event streaming" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=12;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="150" y="580" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" value="LEGENDA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="160" y="700" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-component" value="Componente do Payment Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;align=center;verticalAlign=middle;fontSize=10" parent="1" vertex="1">
+          <mxGeometry x="160" y="730" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-external" value="Sistema/Database Externo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;fontColor=#ffffff;strokeColor=#666666;align=center;verticalAlign=middle;fontSize=10" parent="1" vertex="1">
+          <mxGeometry x="330" y="730" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

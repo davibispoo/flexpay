@@ -1,0 +1,164 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="C4-Container" id="c4_container_diagram">
+    <mxGraphModel dx="1751" dy="1046" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1400" pageHeight="980" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="FlexPay Commerce - Diagrama de Container (C4 Level 2)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lojista" value="&lt;b&gt;Lojista&lt;/b&gt;&lt;br/&gt;[Pessoa]" style="html=1;whiteSpace=wrap;fillColor=#08427b;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" parent="1" vertex="1">
+          <mxGeometry x="50" y="80" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="comprador" value="&lt;b&gt;Comprador&lt;/b&gt;&lt;br/&gt;[Pessoa]" style="html=1;whiteSpace=wrap;fillColor=#08427b;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" parent="1" vertex="1">
+          <mxGeometry x="1230" y="80" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1f5fe;strokeColor=#039be5;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="250" y="60" width="900" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend_label" value="&lt;b&gt;Frontend Layer&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#039be5;" parent="1" vertex="1">
+          <mxGeometry x="260" y="70" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="checkout_widget" value="&lt;b&gt;Checkout Widget&lt;/b&gt;&lt;br/&gt;[Container: JavaScript SDK]&lt;br/&gt;&lt;br/&gt;Widget embedável para e-commerce com todos os métodos de pagamento" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="280" y="110" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" value="&lt;b&gt;Dashboard Lojista&lt;/b&gt;&lt;br/&gt;[Container: React SPA]&lt;br/&gt;&lt;br/&gt;Interface de gestão completa para lojistas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="490" y="110" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_portal" value="&lt;b&gt;Admin Portal&lt;/b&gt;&lt;br/&gt;[Container: React SPA]&lt;br/&gt;&lt;br/&gt;Portal administrativo interno da FlexPay" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="700" y="110" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile_app" value="&lt;b&gt;Mobile App&lt;/b&gt;&lt;br/&gt;[Container: React Native]&lt;br/&gt;&lt;br/&gt;App para gestão mobile dos lojistas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="910" y="110" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="api_gateway" value="&lt;b&gt;API Gateway&lt;/b&gt;&lt;br/&gt;[Container: Kong + Nginx]&lt;br/&gt;&lt;br/&gt;Ponto único de entrada, autenticação JWT, rate limiting e roteamento inteligente" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2e7d32;fontColor=#ffffff;align=center;strokeColor=#1b5e20;" parent="1" vertex="1">
+          <mxGeometry x="550" y="250" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="microservices_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#f57c00;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="360" width="1040" height="237" as="geometry" />
+        </mxCell>
+        <mxCell id="microservices_label" value="&lt;b&gt;Microserviços Core&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#f57c00;" parent="1" vertex="1">
+          <mxGeometry x="190" y="370" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="checkout_service" value="&lt;b&gt;Checkout Service&lt;/b&gt;&lt;br/&gt;[Container: Node.js]&lt;br/&gt;&lt;br/&gt;Processa pagamentos, calcula taxas e gerencia carrinho" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="200" y="405" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="merchant_service" value="&lt;b&gt;Merchant Service&lt;/b&gt;&lt;br/&gt;[Container: Node.js]&lt;br/&gt;&lt;br/&gt;Onboarding de lojistas e KYC/AML compliance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="380" y="405" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="payment_service" value="&lt;b&gt;Payment Service&lt;/b&gt;&lt;br/&gt;[Container: Node.js]&lt;br/&gt;&lt;br/&gt;Integração com Akua.la e processamento multi-método" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="560" y="405" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="risk_service" value="&lt;b&gt;Risk Service&lt;/b&gt;&lt;br/&gt;[Container: Python]&lt;br/&gt;&lt;br/&gt;Análise ML de risco e antifraude em tempo real" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#673ab7;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="740" y="405" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="notification_service" value="&lt;b&gt;Notification Service&lt;/b&gt;&lt;br/&gt;[Container: Node.js]&lt;br/&gt;&lt;br/&gt;E-mails, SMS, webhooks e push notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="920" y="405" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="reconciliation_service" value="&lt;b&gt;Reconciliation Service&lt;/b&gt;&lt;br/&gt;[Container: Node.js]&lt;br/&gt;&lt;br/&gt;Conciliação bancária automática" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="200" y="505" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="reporting_service" value="&lt;b&gt;Reporting Service&lt;/b&gt;&lt;br/&gt;[Container: Node.js]&lt;br/&gt;&lt;br/&gt;Relatórios e analytics para lojistas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ff9800;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="380" y="505" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="webhook_service" value="&lt;b&gt;Webhook Service&lt;/b&gt;&lt;br/&gt;[Container: Go]&lt;br/&gt;&lt;br/&gt;Notificações real-time para merchants" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00bcd4;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="560" y="505" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="databases_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e5f5;strokeColor=#7b1fa2;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="620" width="1040" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="databases_label" value="&lt;b&gt;Camada de Dados&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#7b1fa2;" parent="1" vertex="1">
+          <mxGeometry x="190" y="630" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="postgres" value="&lt;b&gt;PostgreSQL&lt;/b&gt;&lt;br/&gt;[Database: AWS RDS]&lt;br/&gt;&lt;br/&gt;Dados transacionais principais" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#336791;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="220" y="660" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="redis" value="&lt;b&gt;Redis&lt;/b&gt;&lt;br/&gt;[Database: ElastiCache]&lt;br/&gt;&lt;br/&gt;Cache distribuído e sessões" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dc382d;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="400" y="660" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="&lt;b&gt;S3&lt;/b&gt;&lt;br/&gt;[Storage: AWS S3]&lt;br/&gt;&lt;br/&gt;Documentos e backups" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f7921e;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="580" y="660" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="elasticsearch" value="&lt;b&gt;Elasticsearch&lt;/b&gt;&lt;br/&gt;[Database: AWS ES]&lt;br/&gt;&lt;br/&gt;Logs e busca full-text" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fed138;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="760" y="660" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kafka" value="&lt;b&gt;Apache Kafka&lt;/b&gt;&lt;br/&gt;[Message Queue]&lt;br/&gt;&lt;br/&gt;Eventos assíncronos" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#000000;fontColor=#ffffff;" parent="1" vertex="1">
+          <mxGeometry x="940" y="660" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="externals_group" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fafafa;strokeColor=#616161;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="780" width="1040" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="externals_label" value="&lt;b&gt;Sistemas Externos&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#616161;" parent="1" vertex="1">
+          <mxGeometry x="190" y="790" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="akua_external" value="&lt;b&gt;Akua.la API&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Processador de pagamentos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="220" y="820" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bureaus_external" value="&lt;b&gt;Bureaus&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Serasa, SPC, Neoway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="400" y="820" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ecommerce_external" value="&lt;b&gt;E-commerce Platforms&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Shopify, WooCommerce" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="580" y="820" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="banks_external" value="&lt;b&gt;Bancos&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;APIs bancárias para float" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="760" y="820" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sendgrid_external" value="&lt;b&gt;SendGrid/Twilio&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;E-mail e SMS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;" parent="1" vertex="1">
+          <mxGeometry x="940" y="820" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_lojista_dashboard" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976d2;strokeWidth=2;" parent="1" source="lojista" target="dashboard" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_lojista_dashboard_label" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="rel_lojista_dashboard" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_comprador_checkout" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976d2;strokeWidth=2;" parent="1" source="comprador" target="checkout_widget" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_comprador_checkout_label" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="rel_comprador_checkout" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_frontend_gateway" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2e7d32;strokeWidth=2;" parent="1" source="dashboard" target="api_gateway" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_frontend_gateway_label" value="REST API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="rel_frontend_gateway" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_gateway_payment" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#f57c00;strokeWidth=2;" parent="1" source="api_gateway" target="payment_service" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_payment_postgres" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7b1fa2;strokeWidth=2;" parent="1" source="payment_service" target="postgres" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_payment_postgres_label" value="SQL" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="rel_payment_postgres" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_payment_akua" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#616161;strokeWidth=2;" parent="1" source="payment_service" target="akua_external" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_payment_akua_label" value="REST API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="rel_payment_akua" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tech_stack_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#4caf50;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-31" y="220" width="178" height="231" as="geometry" />
+        </mxCell>
+        <mxCell id="tech_stack_title" value="&lt;b&gt;Tech Stack&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#2e7d32;" parent="1" vertex="1">
+          <mxGeometry x="-31" y="230" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="tech_stack_content" value="&lt;b&gt;Frontend:&lt;/b&gt;&lt;br/&gt;• React + TypeScript&lt;br/&gt;• Tailwind CSS&lt;br/&gt;• React Native&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Backend:&lt;/b&gt;&lt;br/&gt;• Node.js + Express&lt;br/&gt;• Python + FastAPI&lt;br/&gt;• Go&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Infrastructure:&lt;/b&gt;&lt;br/&gt;• AWS ECS&lt;br/&gt;• Docker + K8s&lt;br/&gt;• CloudFront CDN" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="-21" y="255" width="160" height="155" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

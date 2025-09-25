@@ -1,0 +1,140 @@
+<mxfile host="app.diagrams.net" modified="2025-07-18T12:00:00.000Z" agent="Claude" version="22.1.16" etag="draft" type="device">
+  <diagram name="C4-Contexto" id="c4_context_diagram">
+    <mxGraphModel dx="1422" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="FlexPay Commerce - Diagrama de Contexto (C4 Level 1)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="284.5" y="20" width="600" height="30" as="geometry" />
+        </mxCell>
+
+        <!-- Pessoas -->
+        <mxCell id="lojista" value="&lt;b&gt;Lojista&lt;/b&gt;&lt;br/&gt;[Pessoa]&lt;br/&gt;&lt;br/&gt;Dono de e-commerce que quer vender online com taxas justas e recebimento rápido" style="html=1;whiteSpace=wrap;fillColor=#08427b;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.82,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.82,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="200" height="180" as="geometry" />
+        </mxCell>
+
+        <mxCell id="comprador" value="&lt;b&gt;Comprador&lt;/b&gt;&lt;br/&gt;[Pessoa]&lt;br/&gt;&lt;br/&gt;Cliente final fazendo compras online que quer checkout rápido e seguro" style="html=1;whiteSpace=wrap;fillColor=#08427b;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.5,0],[1,0.82,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.82,0],[0,0.5,0]];resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="889" y="120" width="200" height="180" as="geometry" />
+        </mxCell>
+
+        <!-- Sistema Principal -->
+        <mxCell id="flexpay" value="&lt;b&gt;FlexPay Commerce&lt;/b&gt;&lt;br/&gt;[Sistema de Software]&lt;br/&gt;&lt;br/&gt;Plataforma completa de pagamentos para e-commerce com Payment Facilitator, checkout unificado e recebimento D+1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0d5091;metaEdit=1;resizable=0;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1" parent="1">
+          <mxGeometry x="400" y="180" width="240" height="120" as="geometry" />
+        </mxCell>
+
+        <!-- Sistemas Externos -->
+        <mxCell id="akua" value="&lt;b&gt;Akua.la&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Processador de pagamentos da América Latina com 10M+ transações/dia" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ecommerce" value="&lt;b&gt;Plataformas E-commerce&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Shopify, WooCommerce, Nuvemshop onde lojistas criam suas lojas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="400" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bureaus" value="&lt;b&gt;Bureaus de Crédito&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Serasa, SPC, Neoway para análise de crédito e antifraude" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bancos" value="&lt;b&gt;Bancos&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Contas bancárias para float e liquidação de pagamentos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="400" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="bacen" value="&lt;b&gt;Banco Central&lt;/b&gt;&lt;br/&gt;[Sistema Externo]&lt;br/&gt;&lt;br/&gt;Regulador do sistema financeiro brasileiro" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d63384;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#bd1f36;metaEdit=1;resizable=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="600" width="200" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Relacionamentos -->
+        <mxCell id="rel1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;" edge="1" parent="1" source="lojista" target="flexpay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1_label" value="Configura loja e monitora vendas&lt;br/&gt;[HTTPS]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel1">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="20" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;" edge="1" parent="1" source="comprador" target="flexpay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2_label" value="Realiza compras&lt;br/&gt;[HTTPS]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel2">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="-30" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;" edge="1" parent="1" source="flexpay" target="akua">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3_label" value="Processa pagamentos&lt;br/&gt;[REST API]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel3">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="-30" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;" edge="1" parent="1" source="flexpay" target="ecommerce">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4_label" value="Integra checkout&lt;br/&gt;[GraphQL/REST]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel4">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;" edge="1" parent="1" source="flexpay" target="bureaus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5_label" value="Consulta antifraude&lt;br/&gt;[SOAP/REST]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel5">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="30" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#707070;strokeWidth=2;fontColor=#707070;jumpStyle=none;" edge="1" parent="1" source="flexpay" target="bancos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6_label" value="Liquida pagamentos&lt;br/&gt;[SFTP/API]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel6">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="50" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d63384;strokeWidth=2;fontColor=#d63384;jumpStyle=none;dashed=1;" edge="1" parent="1" source="bacen" target="flexpay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7_label" value="Regula e fiscaliza&lt;br/&gt;[Compliance]" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontSize=11;" vertex="1" connectable="0" parent="rel7">
+          <mxGeometry x="-0.1" y="-1" relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Legenda -->
+        <mxCell id="legenda_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#dee2e6;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="740" width="920" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legenda_title" value="&lt;b&gt;Legenda:&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="750" width="70" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legenda_pessoa" value="Pessoa" style="html=1;whiteSpace=wrap;fillColor=#08427b;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="755" width="50" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legenda_sistema" value="Sistema" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1168bd;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="250" y="755" width="60" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legenda_externo" value="Sistema Externo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8c8496;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="330" y="755" width="90" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legenda_regulador" value="Regulador" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d63384;fontColor=#ffffff;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="755" width="70" height="30" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

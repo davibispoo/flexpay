@@ -8,29 +8,29 @@
 
 ## 📋 Índice
 
-1. [Story Telling - O Problema](#1-story-telling---o-problema)
-2. [Objetivos de Aprendizado](#2-objetivos-de-aprendizado)
-3. [Perguntas Principais](#3-perguntas-principais)
-4. [Análise de Riscos](#4-análise-de-riscos)
-5. [Plano de Aprendizado](#5-plano-de-aprendizado)
-6. [Plano de Mitigação](#6-plano-de-mitigação)
-7. [Partes Interessadas](#7-partes-interessadas)
-8. [Usuários e Objetivos](#8-usuários-e-objetivos)
-9. [Cenário Crítico](#9-cenário-crítico)
-10. [Arquitetura Freeform](#10-arquitetura-freeform)
-11. [Componentes Principais](#11-componentes-principais)
-12. [Requisitos Importantes](#12-requisitos-importantes)
-13. [Raciocínio Arquitetural](#13-raciocínio-arquitetural)
-14. [Padrões Essenciais](#14-padrões-essenciais)
-15. [Padrões Ocultos](#15-padrões-ocultos)
-16. [Metamodelo](#16-metamodelo)
-17. [Completude do Diagrama](#17-completude-do-diagrama)
-18. [Discussões Importantes](#18-discussões-importantes)
-19. [Decisões Difíceis](#19-decisões-difíceis)
-20. [Decisões Sob Incerteza](#20-decisões-sob-incerteza)
-21. [Pontos Sem Retorno](#21-pontos-sem-retorno)
-22. [Diagramas C4 Model](#22-diagramas-c4-model)
-23. [Apresentação em Vídeo](#23-apresentação-em-vídeo)
+1. Story Telling - O Problema
+2. Objetivos de Aprendizado
+3. Perguntas Principais
+4. Análise de Riscos
+5. Plano de Aprendizado
+6. Plano de Mitigação
+7. Partes Interessadas
+8. Usuários e Objetivos
+9. Cenário Crítico
+10. Arquitetura Freeform
+11. Componentes Principais
+12. Requisitos Importantes
+13. Raciocínio Arquitetural
+14. Padrões Essenciais
+15. Padrões Ocultos
+16. Metamodelo
+17. Completude do Diagrama
+18. Discussões Importantes
+19. Decisões Difíceis
+20. Decisões Sob Incerteza
+21. Pontos Sem Retorno
+22. Diagramas C4 Model
+23. Apresentação em Vídeo
 
 ---
 

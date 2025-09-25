@@ -1,9 +1,5 @@
 # 🚀 FlexPay Commerce - Enterprise Payment Architecture
 
-**Projeto**: Enterprise Payment Architecture
-**Autor**: Solution Architect
-**Data**: Setembro 2025
-
 ---
 
 ## 📋 Índice
